@@ -4,6 +4,9 @@ using System.Drawing;
 using System.Windows.Forms;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
+using ConexaoMysql;
+using MySql.Data;
+using MySql.Data.MySqlClient;
 
 namespace AppLocadora
 {
@@ -18,10 +21,10 @@ namespace AppLocadora
 
         internal void ExibeClientes()
         {
-            if (listaClientes.Count == 0)
-                return;
+            //if (listaClientes.Count == 0)
+            //    return;
 
-            lvClientes.Items.Clear();
+            //lvClientes.Items.Clear();
             int i = 1;
 
             foreach (KeyValuePair<string, Cliente> kvp in listaClientes)
@@ -55,30 +58,39 @@ namespace AppLocadora
 
         private void Customers_Load(object sender, EventArgs e)
         {
-            listaClientes = new Dictionary<string, Cliente>();
-            BinaryFormatter bfmClientes = new BinaryFormatter();
-
-            // arquivo que trata a lista de clientes
-            string strNomeArquivo = @"C:\NovaLoc_Carros\Clientes.crc";
-
-            if (File.Exists(strNomeArquivo))
+            OperacaoBanco operacao = new OperacaoBanco();
+            Cliente cliente = new Cliente();
+            MySqlDataReader dados = operacao.Select("select Id,Nome,Endereco,Cidade,Estado,CEP,CNH from tb_cliente");
+            String nomeAlunoObtido = "";
+            while (dados.Read())
             {
-                FileStream stmClientes = new FileStream(strNomeArquivo,
-                                                         FileMode.Open,
-                                                         FileAccess.Read,
-                                                         FileShare.Read);
-                try
-                {
-                    // Retorna a lista de clientes
-                    listaClientes =
-                        (Dictionary<string, Cliente>)
-                            bfmClientes.Deserialize(stmClientes);
-                }
-                finally
-                {
-                    stmClientes.Close();
-                }
+                string nome = Convert.ToString(dados[0]);
             }
+            // variavel nomeAlunoObtido está com o dado obtido da tabela.
+            //listaClientes = new Dictionary<string, Cliente>();
+            //BinaryFormatter bfmClientes = new BinaryFormatter();
+
+            //// arquivo que trata a lista de clientes
+            //string strNomeArquivo = @"C:\NovaLoc_Carros\Clientes.crc";
+
+            //if (File.Exists(strNomeArquivo))
+            //{
+            //    FileStream stmClientes = new FileStream(strNomeArquivo,
+            //                                             FileMode.Open,
+            //                                             FileAccess.Read,
+            //                                             FileShare.Read);
+            //    try
+            //    {
+            //        // Retorna a lista de clientes
+            //        listaClientes =
+            //            (Dictionary<string, Cliente>)
+            //                bfmClientes.Deserialize(stmClientes);
+            //    }
+            //    finally
+            //    {
+            //        stmClientes.Close();
+            //    }
+            //}
 
             ExibeClientes();
         }
