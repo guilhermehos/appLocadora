@@ -57,6 +57,7 @@ namespace AppLocadora
             this.colCity,
             this.colState,
             this.colZIPCode});
+            this.lvClientes.ContextMenuStrip = this.contextMenuStrip4;
             this.lvClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lvClientes.FullRowSelect = true;
             this.lvClientes.GridLines = true;
@@ -143,13 +144,14 @@ namespace AppLocadora
             this.contextMenuStrip4.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.editarToolStripMenuItem1});
             this.contextMenuStrip4.Name = "contextMenuStrip4";
-            this.contextMenuStrip4.Size = new System.Drawing.Size(153, 48);
+            this.contextMenuStrip4.Size = new System.Drawing.Size(105, 26);
             // 
             // editarToolStripMenuItem1
             // 
             this.editarToolStripMenuItem1.Name = "editarToolStripMenuItem1";
-            this.editarToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.editarToolStripMenuItem1.Size = new System.Drawing.Size(104, 22);
             this.editarToolStripMenuItem1.Text = "Editar";
+            this.editarToolStripMenuItem1.Click += EditarToolStripMenuItem1_Click1;
             // 
             // Clientes
             // 
@@ -169,6 +171,7 @@ namespace AppLocadora
             this.ResumeLayout(false);
 
         }
+
 
         private void EditarToolStripMenuItem1_Click(object sender, System.EventArgs e)
         {

@@ -164,18 +164,24 @@ namespace AppLocadora
 
         }
 
-        private void lvClientes_SelectedIndexChanged(object sender, EventArgs e)
+        private void lvClientes_Click(object sender, MouseEventArgs e)
         {
 
         }
-        private void EditarToolStripMenuItem1_Click(object sender)
+        private void editarToolStripMenuItem2_Click(object sender, MouseEventArgs e)
         {
 
         }
 
-        private void editarToolStripMenuItem2_Click(object sender, EventArgs e)
+        private void lvClientes_SelectedIndexChanged(object sender, MouseEventArgs e)
+        {
+            
+        }
+
+        private void EditarToolStripMenuItem1_Click1(object sender, System.EventArgs e)
         {
             ClienteEditor editor = new ClienteEditor();
+
 
             Cliente cli = new Cliente();
 
@@ -209,6 +215,11 @@ namespace AppLocadora
                     MessageBox.Show("Sucesso!");
                 }
             }
+        }
+
+        private void lvClientes_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
