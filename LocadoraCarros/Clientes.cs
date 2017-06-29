@@ -12,7 +12,7 @@ namespace AppLocadora
 {
     public partial class Clientes : Form
     {
-        Dictionary<string, Cliente> listaClientes;
+        Dictionary<int, Cliente> listaClientes = new Dictionary<int, Cliente>();
 
         public Clientes()
         {
@@ -24,12 +24,12 @@ namespace AppLocadora
             //if (listaClientes.Count == 0)
             //    return;
 
-            //lvClientes.Items.Clear();
+            lvClientes.Items.Clear();
             int i = 1;
 
-            foreach (KeyValuePair<string, Cliente> kvp in listaClientes)
+            foreach (KeyValuePair<int, Cliente> kvp in listaClientes)
             {
-                ListViewItem lviCliente = new ListViewItem(kvp.Key);
+                ListViewItem lviCliente = new ListViewItem(kvp.Key.ToString());
 
                 Cliente cli = kvp.Value;
 
@@ -64,7 +64,17 @@ namespace AppLocadora
             String nomeAlunoObtido = "";
             while (dados.Read())
             {
-                string nome = Convert.ToString(dados[0]);
+                if (dados.HasRows)
+                {
+                    cliente = new Cliente();
+                    cliente.Id = Convert.ToInt16(dados["Id"]);
+                    cliente.Nome = Convert.ToString(dados["Nome"].ToString());
+                    cliente.Cidade = dados["Cidade"].ToString();
+                    cliente.Estado = dados["Estado"].ToString();
+                    cliente.CodigoPostal = dados["CEP"].ToString();
+                }
+                // Retorna a lista de clientes
+                listaClientes.Add(cliente.Id, cliente);
             }
             // variavel nomeAlunoObtido está com o dado obtido da tabela.
             //listaClientes = new Dictionary<string, Cliente>();
@@ -124,7 +134,7 @@ namespace AppLocadora
                 cli.Cidade = editor.txtCity.Text;
                 cli.Estado = editor.cbxStates.Text;
                 cli.CodigoPostal = editor.txtZIPCode.Text;
-                listaClientes.Add(editor.txtDrvLicNbr.Text, cli);
+                //listaClientes.Add(editor.txtDrvLicNbr.Text, cli);
 
                 FileStream bcrStream = new FileStream(strNomeArquivo,
                                                       FileMode.Create,

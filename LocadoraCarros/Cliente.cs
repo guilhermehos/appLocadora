@@ -5,6 +5,7 @@ namespace AppLocadora
     [Serializable]
     public class Cliente
     {
+        public int Id;
         public string Nome;
         public string Endereco;
         public string Cidade;
@@ -13,6 +14,7 @@ namespace AppLocadora
 
         public Cliente()
         {
+            Id = 0;
             Nome = "";
             Endereco = "";
             Cidade = "";
