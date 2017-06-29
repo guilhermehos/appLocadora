@@ -28,8 +28,10 @@ namespace AppLocadora
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Clientes));
             this.lvClientes = new System.Windows.Forms.ListView();
+            this.colId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colDrvLicNbr = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colFullName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colAddress = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -38,11 +40,17 @@ namespace AppLocadora
             this.colZIPCode = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnClose = new System.Windows.Forms.Button();
             this.btnNewCustomer = new System.Windows.Forms.Button();
+            this.editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editarToolStrip = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenuStrip4 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.editarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenuStrip4.SuspendLayout();
             this.SuspendLayout();
             // 
             // lvClientes
             // 
             this.lvClientes.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.colId,
             this.colDrvLicNbr,
             this.colFullName,
             this.colAddress,
@@ -52,12 +60,18 @@ namespace AppLocadora
             this.lvClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lvClientes.FullRowSelect = true;
             this.lvClientes.GridLines = true;
-            this.lvClientes.Location = new System.Drawing.Point(12, 12);
+            this.lvClientes.LabelWrap = false;
+            this.lvClientes.Location = new System.Drawing.Point(13, 12);
             this.lvClientes.Name = "lvClientes";
             this.lvClientes.Size = new System.Drawing.Size(649, 217);
             this.lvClientes.TabIndex = 6;
             this.lvClientes.UseCompatibleStateImageBehavior = false;
             this.lvClientes.View = System.Windows.Forms.View.Details;
+            this.lvClientes.SelectedIndexChanged += new System.EventHandler(this.lvClientes_SelectedIndexChanged);
+            // 
+            // colId
+            // 
+            this.colId.Text = "ID";
             // 
             // colDrvLicNbr
             // 
@@ -113,6 +127,30 @@ namespace AppLocadora
             this.btnNewCustomer.UseVisualStyleBackColor = true;
             this.btnNewCustomer.Click += new System.EventHandler(this.btnNewCustomer_Click);
             // 
+            // editarToolStripMenuItem
+            // 
+            this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
+            this.editarToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
+            // 
+            // editarToolStrip
+            // 
+            this.editarToolStrip.Name = "editarToolStrip";
+            this.editarToolStrip.Size = new System.Drawing.Size(32, 19);
+            // 
+            // contextMenuStrip4
+            // 
+            this.contextMenuStrip4.AccessibleRole = System.Windows.Forms.AccessibleRole.Row;
+            this.contextMenuStrip4.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.editarToolStripMenuItem1});
+            this.contextMenuStrip4.Name = "contextMenuStrip4";
+            this.contextMenuStrip4.Size = new System.Drawing.Size(153, 48);
+            // 
+            // editarToolStripMenuItem1
+            // 
+            this.editarToolStripMenuItem1.Name = "editarToolStripMenuItem1";
+            this.editarToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.editarToolStripMenuItem1.Text = "Editar";
+            // 
             // Clientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -127,8 +165,14 @@ namespace AppLocadora
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Clientes";
             this.Load += new System.EventHandler(this.Customers_Load);
+            this.contextMenuStrip4.ResumeLayout(false);
             this.ResumeLayout(false);
 
+        }
+
+        private void EditarToolStripMenuItem1_Click(object sender, System.EventArgs e)
+        {
+            throw new System.NotImplementedException();
         }
 
         #endregion
@@ -142,5 +186,10 @@ namespace AppLocadora
         private System.Windows.Forms.ColumnHeader colZIPCode;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnNewCustomer;
+        private System.Windows.Forms.ColumnHeader colId;
+        private System.Windows.Forms.ToolStripMenuItem editarToolStrip;
+        private System.Windows.Forms.ToolStripMenuItem editarToolStripMenuItem;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip4;
+        private System.Windows.Forms.ToolStripMenuItem editarToolStripMenuItem1;
     }
 }

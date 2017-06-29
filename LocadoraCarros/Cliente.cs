@@ -11,6 +11,7 @@ namespace AppLocadora
         public string Cidade;
         public string Estado;
         public string CodigoPostal;
+        public string CNH;
 
         public Cliente()
         {
@@ -20,6 +21,7 @@ namespace AppLocadora
             Cidade = "";
             Estado = "";
             CodigoPostal = "";
+            CNH = "";
         }
 
         // define o cliente
