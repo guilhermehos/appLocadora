@@ -79,31 +79,6 @@ namespace AppLocadora
                 // Retorna a lista de clientes
                 listaClientes.Add(cliente.Id, cliente);
             }
-            // variavel nomeAlunoObtido está com o dado obtido da tabela.
-            //listaClientes = new Dictionary<string, Cliente>();
-            //BinaryFormatter bfmClientes = new BinaryFormatter();
-
-            //// arquivo que trata a lista de clientes
-            //string strNomeArquivo = @"C:\NovaLoc_Carros\Clientes.crc";
-
-            //if (File.Exists(strNomeArquivo))
-            //{
-            //    FileStream stmClientes = new FileStream(strNomeArquivo,
-            //                                             FileMode.Open,
-            //                                             FileAccess.Read,
-            //                                             FileShare.Read);
-            //    try
-            //    {
-            //        // Retorna a lista de clientes
-            //        listaClientes =
-            //            (Dictionary<string, Cliente>)
-            //                bfmClientes.Deserialize(stmClientes);
-            //    }
-            //    finally
-            //    {
-            //        stmClientes.Close();
-            //    }
-            //}
 
             ExibeClientes();
         }
@@ -111,7 +86,6 @@ namespace AppLocadora
         private void btnNewCustomer_Click(object sender, EventArgs e)
         {
             ClienteEditor editor = new ClienteEditor();
-            //Directory.CreateDirectory(@"C:\NovaLoc_Carros");
 
             if (editor.ShowDialog() == DialogResult.OK)
             {
@@ -127,8 +101,7 @@ namespace AppLocadora
                     MessageBox.Show("Informe o nome completo.");
                     return;
                 }
-
-
+                
                 Cliente cli = new Cliente();
 
                 cli.CNH = editor.txtDrvLicNbr.Text;
@@ -143,18 +116,6 @@ namespace AppLocadora
                 {
                     MessageBox.Show("Sucesso!");
                 }
-                //string strNomeArquivo = @"C:\NovaLoc_Carros\Clientes.crc";
-
-                ////listaClientes.Add(editor.txtDrvLicNbr.Text, cli);
-
-                //FileStream bcrStream = new FileStream(strNomeArquivo,
-                //                                      FileMode.Create,
-                //                                      FileAccess.Write,
-                //                                      FileShare.Write);
-                //BinaryFormatter bcrBinary = new BinaryFormatter();
-                //bcrBinary.Serialize(bcrStream, listaClientes);
-                //bcrStream.Close();
-
                 Close();
             }
         }
@@ -181,8 +142,7 @@ namespace AppLocadora
         private void EditarToolStripMenuItem1_Click1(object sender, System.EventArgs e)
         {
             ClienteEditor editor = new ClienteEditor();
-
-
+            
             Cliente cli = new Cliente();
 
             cli.CNH = editor.txtDrvLicNbr.Text;

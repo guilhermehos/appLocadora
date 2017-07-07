@@ -9,6 +9,7 @@ namespace AppLocadora
         public string SobreNome;
         public string Titulo;
         public double SalarioPorHora;
+        public string Codigo;
 
         public string Nome
         {
@@ -21,6 +22,7 @@ namespace AppLocadora
             SobreNome = "Desconhecido";
             Titulo = "N/A";
             SalarioPorHora = 0.00;
+            Codigo = "";
         }
 
         // construtor define um empregado
