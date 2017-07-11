@@ -1,3 +1,7 @@
+using ConexaoMysql;
+using MySql.Data.MySqlClient;
+using System.Data;
+
 namespace AppLocadora
 {
     partial class CarroEditor
@@ -41,14 +45,14 @@ namespace AppLocadora
             this.label5 = new System.Windows.Forms.Label();
             this.txtYear = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtModel = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtMake = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtTagNumber = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtPlaca = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.cboFab = new System.Windows.Forms.ComboBox();
+            this.cboModel = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbxCar)).BeginInit();
             this.SuspendLayout();
             // 
@@ -199,15 +203,6 @@ namespace AppLocadora
             this.label4.Text = "&Ano:";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // txtModel
-            // 
-            this.txtModel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtModel.Location = new System.Drawing.Point(105, 106);
-            this.txtModel.Name = "txtModel";
-            this.txtModel.Size = new System.Drawing.Size(173, 22);
-            this.txtModel.TabIndex = 24;
-            this.txtModel.TextChanged += new System.EventHandler(this.txtModel_TextChanged);
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -218,15 +213,6 @@ namespace AppLocadora
             this.label3.TabIndex = 23;
             this.label3.Text = "M&odelo:";
             this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // txtMake
-            // 
-            this.txtMake.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMake.Location = new System.Drawing.Point(105, 75);
-            this.txtMake.Name = "txtMake";
-            this.txtMake.Size = new System.Drawing.Size(173, 22);
-            this.txtMake.TabIndex = 22;
-            this.txtMake.TextChanged += new System.EventHandler(this.txtMake_TextChanged);
             // 
             // label2
             // 
@@ -280,12 +266,31 @@ namespace AppLocadora
             this.label6.Text = "&Placa :";
             this.label6.Click += new System.EventHandler(this.labelPlaca_Click);
             // 
+            // cboFab
+            // 
+            this.cboFab.FormattingEnabled = true;
+            this.cboFab.Location = new System.Drawing.Point(105, 75);
+            this.cboFab.Name = "cboFab";
+            this.cboFab.Size = new System.Drawing.Size(173, 21);
+            this.cboFab.TabIndex = 38;
+            // 
+            // cboModel
+            // 
+            this.cboModel.FormattingEnabled = true;
+            this.cboModel.Location = new System.Drawing.Point(105, 105);
+            this.cboModel.Name = "cboModel";
+            this.cboModel.Size = new System.Drawing.Size(173, 21);
+            this.cboModel.TabIndex = 39;
+            this.cboModel.SelectedIndexChanged += new System.EventHandler(this.cboModel_SelectedIndexChanged);
+            // 
             // CarroEditor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(600, 316);
+            this.Controls.Add(this.cboModel);
+            this.Controls.Add(this.cboFab);
             this.Controls.Add(this.txtPlaca);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnSubmit);
@@ -300,9 +305,7 @@ namespace AppLocadora
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtYear);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtModel);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtMake);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtTagNumber);
             this.Controls.Add(this.label1);
@@ -343,13 +346,13 @@ namespace AppLocadora
         private System.Windows.Forms.Label label5;
         public System.Windows.Forms.TextBox txtYear;
         private System.Windows.Forms.Label label4;
-        public System.Windows.Forms.TextBox txtModel;
         private System.Windows.Forms.Label label3;
-        public System.Windows.Forms.TextBox txtMake;
         private System.Windows.Forms.Label label2;
         public System.Windows.Forms.TextBox txtTagNumber;
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.TextBox txtPlaca;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox cboFab;
+        private System.Windows.Forms.ComboBox cboModel;
     }
 }
