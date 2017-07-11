@@ -5,6 +5,7 @@ namespace AppLocadora
     [Serializable]
     public class Empregado
     {
+        public int Id;
         public string PrimeiroNome;
         public string SobreNome;
         public string Titulo;
@@ -18,6 +19,7 @@ namespace AppLocadora
 
         public Empregado()
         {
+            Id = 0;
             PrimeiroNome = "Desconhecido";
             SobreNome = "Desconhecido";
             Titulo = "N/A";
