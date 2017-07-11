@@ -82,32 +82,6 @@ namespace AppLocadora
             }
 
             ExibeEmpregados();
-            //listaEmpregados = new SortedDictionary<string, Empregado>();
-            //BinaryFormatter bfmEmpregados = new BinaryFormatter();
-
-            ////armazena a lista de empregados
-            //string strNomeArquivo = @"C:\NovaLoc_Carros\Empregados.cre";
-
-            //if (File.Exists(strNomeArquivo))
-            //{
-            //    FileStream stmEmpregados = new FileStream(strNomeArquivo,
-            //                                             FileMode.Open,
-            //                                             FileAccess.Read,
-            //                                             FileShare.Read);
-
-            //    try
-            //    {
-            //        // retorna lista de empregados
-            //        listaEmpregados =(SortedDictionary<string,Empregado>)
-            //        bfmEmpregados.Deserialize(stmEmpregados);
-            //    }
-            //    finally
-            //    {
-            //        stmEmpregados.Close();
-            //    }
-            //}
-
-            //ExibeEmpregados();
         }
 
         private void btnNewEmployee_Click(object sender, EventArgs e)
@@ -130,7 +104,6 @@ namespace AppLocadora
                 }
 
                 Empregado empregado = new Empregado();
-
                 empregado.Codigo = editor.txtEmployeeNumber.Text;
                 empregado.PrimeiroNome = editor.txtFirstName.Text;
                 empregado.SobreNome = editor.txtLastName.Text;
@@ -144,40 +117,6 @@ namespace AppLocadora
                     empregados.ShowDialog();
                 }
                 Close();
-                //Directory.CreateDirectory(@"C:\NovaLoc_Carros");
-
-                //if (editor.ShowDialog() == DialogResult.OK)
-                //{
-                //    if (editor.txtEmployeeNumber.Text == "")
-                //    {
-                //        MessageBox.Show("Informe o número do empregado");
-                //        return;
-                //    }
-
-                //    if (editor.txtLastName.Text == "")
-                //    {
-                //        MessageBox.Show("Informe o sobrenome do empregado");
-                //        return;
-                //    }
-
-                //    string strNomeArquivo = @"C:\NovaLoc_Carros\Empregados.cre";
-
-                //    Empregado empl = new Empregado();
-
-                //    empl.PrimeiroNome = editor.txtFirstName.Text;
-                //    empl.SobreNome = editor.txtLastName.Text;
-                //    empl.Titulo = editor.txtTitle.Text;
-                //    empl.SalarioPorHora = double.Parse(editor.txtHourlySalary.Text);
-                //    listaEmpregados.Add(editor.txtEmployeeNumber.Text, empl);
-
-                //    FileStream bcrStream = new FileStream(strNomeArquivo,
-                //                                          FileMode.Create,
-                //                                          FileAccess.Write,
-                //                                          FileShare.Write);
-                //    BinaryFormatter bcrBinary = new BinaryFormatter();
-                //    bcrBinary.Serialize(bcrStream, listaEmpregados);
-                //    bcrStream.Close();
-
                 ExibeEmpregados();
             }
         }
