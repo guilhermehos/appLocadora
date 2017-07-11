@@ -273,6 +273,7 @@ namespace AppLocadora
             this.cboFab.Name = "cboFab";
             this.cboFab.Size = new System.Drawing.Size(173, 21);
             this.cboFab.TabIndex = 38;
+            this.cboFab.SelectedIndexChanged += new System.EventHandler(this.cboFab_SelectedIndexChanged);
             // 
             // cboModel
             // 
