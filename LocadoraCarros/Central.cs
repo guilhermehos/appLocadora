@@ -19,8 +19,8 @@ namespace AppLocadora
 
         private void btnCars_Click(object sender, EventArgs e)
         {
-            CarroEditor dlgCars = new CarroEditor();
-            dlgCars.ShowDialog();
+            Carros carros = new Carros();
+            carros.ShowDialog();
         }
 
         private void btnEmployees_Click(object sender, EventArgs e)

@@ -38,12 +38,12 @@ namespace AppLocadora
             this.colCity = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colState = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colZIPCode = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.contextMenuStrip4 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.editarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnNewCustomer = new System.Windows.Forms.Button();
             this.editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editarToolStrip = new System.Windows.Forms.ToolStripMenuItem();
-            this.contextMenuStrip4 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.editarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip4.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -105,6 +105,20 @@ namespace AppLocadora
             this.colZIPCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.colZIPCode.Width = 70;
             // 
+            // contextMenuStrip4
+            // 
+            this.contextMenuStrip4.AccessibleRole = System.Windows.Forms.AccessibleRole.Row;
+            this.contextMenuStrip4.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.editarToolStripMenuItem1});
+            this.contextMenuStrip4.Name = "contextMenuStrip4";
+            this.contextMenuStrip4.Size = new System.Drawing.Size(105, 26);
+            // 
+            // editarToolStripMenuItem1
+            // 
+            this.editarToolStripMenuItem1.Name = "editarToolStripMenuItem1";
+            this.editarToolStripMenuItem1.Size = new System.Drawing.Size(104, 22);
+            this.editarToolStripMenuItem1.Text = "Editar";
+            // 
             // btnClose
             // 
             this.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
@@ -137,21 +151,6 @@ namespace AppLocadora
             // 
             this.editarToolStrip.Name = "editarToolStrip";
             this.editarToolStrip.Size = new System.Drawing.Size(32, 19);
-            // 
-            // contextMenuStrip4
-            // 
-            this.contextMenuStrip4.AccessibleRole = System.Windows.Forms.AccessibleRole.Row;
-            this.contextMenuStrip4.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.editarToolStripMenuItem1});
-            this.contextMenuStrip4.Name = "contextMenuStrip4";
-            this.contextMenuStrip4.Size = new System.Drawing.Size(105, 26);
-            // 
-            // editarToolStripMenuItem1
-            // 
-            this.editarToolStripMenuItem1.Name = "editarToolStripMenuItem1";
-            this.editarToolStripMenuItem1.Size = new System.Drawing.Size(104, 22);
-            this.editarToolStripMenuItem1.Text = "Editar";
-            this.editarToolStripMenuItem1.Click += EditarToolStripMenuItem1_Click1;
             // 
             // Clientes
             // 

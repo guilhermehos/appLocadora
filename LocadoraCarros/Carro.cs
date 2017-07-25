@@ -5,6 +5,7 @@ namespace AppLocadora
     [Serializable]
     public class Carro
     {
+        public int Id;
         public string Fabricante;
         public string Modelo;
         public int Ano;
@@ -16,6 +17,7 @@ namespace AppLocadora
 
         public Carro()
         {
+            Id = 0;
             Fabricante = "";
             Modelo = "";
             Ano = 0;

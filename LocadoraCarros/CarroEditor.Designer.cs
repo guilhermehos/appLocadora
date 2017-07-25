@@ -317,7 +317,7 @@ namespace AppLocadora
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Editor de Carros";
-            this.Load += new System.EventHandler(this.CarroEditor_Load);
+            //this.Load += new System.EventHandler(this.CarroEditor_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbxCar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
