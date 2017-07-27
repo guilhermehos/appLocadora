@@ -50,20 +50,21 @@ namespace AppLocadora
             // txtZIPCode
             // 
             this.txtZIPCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtZIPCode.Location = new System.Drawing.Point(324, 112);
+            this.txtZIPCode.Location = new System.Drawing.Point(100, 82);
             this.txtZIPCode.Name = "txtZIPCode";
             this.txtZIPCode.Size = new System.Drawing.Size(72, 22);
             this.txtZIPCode.TabIndex = 25;
+            this.txtZIPCode.LostFocus += new System.EventHandler(this.txtZIPCode_TextChanged);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(283, 118);
+            this.label6.Location = new System.Drawing.Point(15, 82);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 16);
+            this.label6.Size = new System.Drawing.Size(41, 16);
             this.label6.TabIndex = 24;
-            this.label6.Text = "CEP";
+            this.label6.Text = "CEP :";
             // 
             // cbxStates
             // 
@@ -98,7 +99,7 @@ namespace AppLocadora
             "SE \t",
             "SP \t",
             "TO"});
-            this.cbxStates.Location = new System.Drawing.Point(343, 23);
+            this.cbxStates.Location = new System.Drawing.Point(304, 79);
             this.cbxStates.Name = "cbxStates";
             this.cbxStates.Size = new System.Drawing.Size(53, 24);
             this.cbxStates.Sorted = true;
@@ -108,7 +109,7 @@ namespace AppLocadora
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(283, 31);
+            this.label3.Location = new System.Drawing.Point(244, 87);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(54, 16);
             this.label3.TabIndex = 16;
@@ -117,7 +118,7 @@ namespace AppLocadora
             // txtCity
             // 
             this.txtCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCity.Location = new System.Drawing.Point(100, 112);
+            this.txtCity.Location = new System.Drawing.Point(100, 139);
             this.txtCity.Name = "txtCity";
             this.txtCity.Size = new System.Drawing.Size(100, 22);
             this.txtCity.TabIndex = 23;
@@ -126,7 +127,7 @@ namespace AppLocadora
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(15, 114);
+            this.label2.Location = new System.Drawing.Point(15, 141);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(55, 16);
             this.label2.TabIndex = 22;
@@ -167,7 +168,7 @@ namespace AppLocadora
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(15, 86);
+            this.label5.Location = new System.Drawing.Point(15, 113);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(70, 16);
             this.label5.TabIndex = 20;
@@ -176,7 +177,7 @@ namespace AppLocadora
             // txtAddress
             // 
             this.txtAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAddress.Location = new System.Drawing.Point(100, 83);
+            this.txtAddress.Location = new System.Drawing.Point(100, 110);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(296, 22);
             this.txtAddress.TabIndex = 21;

@@ -11,7 +11,7 @@ namespace ConexaoMysql
         private static MySqlConnection objConexao = null;
 
         // string mysql acessa o banco do servidor de hospedagem
-        private String stringconnection1 ="server=mysqlghos.mysql.database.azure.com;User Id=ghos@mysqlghos;password=gui!@#$395778;database=appLocadora";
+        private String stringconnection1 = "server=127.0.0.1;User Id=root;password=102030;database=appLocadora";
 
         //string mysql rodando na maquina do desenvolvedor.
         private String stringconnection2 = "server=localhost;User Id = seuid; password=suasenha;database=suainstancialocalmysql";

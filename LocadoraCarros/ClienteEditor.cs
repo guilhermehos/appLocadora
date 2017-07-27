@@ -19,5 +19,13 @@ namespace AppLocadora
         {
 
         }
+
+        private void txtZIPCode_TextChanged(object sender, EventArgs e)
+        {
+            WebServiceCEP webServiceCEP = new WebServiceCEP(txtZIPCode.Text);
+            txtCity.Text = webServiceCEP.Cidade;
+            txtAddress.Text = webServiceCEP.Lagradouro;
+            cbxStates.Text = webServiceCEP.UF;
+        }
     }
 }

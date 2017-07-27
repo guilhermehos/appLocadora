@@ -9,3 +9,4 @@ C:\LocadoraCarros\appLocadora\ConexaoMysql\bin\Debug\Microsoft.Build.Utilities.v
 C:\LocadoraCarros\appLocadora\ConexaoMysql\bin\Debug\pt-BR\Microsoft.Build.Utilities.v3.5.resources.dll
 C:\LocadoraCarros\appLocadora\ConexaoMysql\obj\Debug\ConexaoMysql.exe
 C:\LocadoraCarros\appLocadora\ConexaoMysql\obj\Debug\ConexaoMysql.pdb
+C:\LocadoraCarros\appLocadora\ConexaoMysql\obj\Debug\ConexaoMysql.csprojResolveAssemblyReference.cache

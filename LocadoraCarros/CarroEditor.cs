@@ -20,7 +20,6 @@ namespace AppLocadora
             MySqlDataReader dados = operacao.Select("Select Distinct Marca from tb_marcas");
             while (dados.Read())
             {
-
                 string rowz = string.Format("{0}", dados["Marca"]);
                 cboFab.Items.Add(rowz);
             }
