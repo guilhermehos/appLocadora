@@ -127,3 +127,4 @@ C:\LocadoraCarros\appLocadora\LocadoraCarros\obj\Debug\AppLocadora.TaxasLocacao.
 C:\LocadoraCarros\appLocadora\LocadoraCarros\obj\Debug\LocadoraCarros.csproj.GenerateResource.Cache
 C:\LocadoraCarros\appLocadora\LocadoraCarros\obj\Debug\AppLocadora.exe
 C:\LocadoraCarros\appLocadora\LocadoraCarros\obj\Debug\AppLocadora.pdb
+C:\LocadoraCarros\appLocadora\LocadoraCarros\obj\Debug\AppLocadora.CadastroCliente.resources
