@@ -115,97 +115,97 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CadastroCliente.cs">
+    <Compile Include="View\CadastroCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CadastroCliente.Designer.cs">
+    <Compile Include="View\CadastroCliente.Designer.cs">
       <DependentUpon>CadastroCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Carro.cs" />
-    <Compile Include="CarroEditor.cs">
+    <Compile Include="DAO\Model\Carro.cs" />
+    <Compile Include="View\CarroEditor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CarroEditor.Designer.cs">
+    <Compile Include="View\CarroEditor.Designer.cs">
       <DependentUpon>CarroEditor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Carros.cs">
+    <Compile Include="View\Carros.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Carros.Designer.cs">
+    <Compile Include="View\Carros.Designer.cs">
       <DependentUpon>Carros.cs</DependentUpon>
     </Compile>
-    <Compile Include="Cliente.cs" />
-    <Compile Include="ClienteEditor.cs">
+    <Compile Include="DAO\Model\Cliente.cs" />
+    <Compile Include="View\ClienteEditor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ClienteEditor.Designer.cs">
+    <Compile Include="View\ClienteEditor.Designer.cs">
       <DependentUpon>ClienteEditor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Clientes.cs">
+    <Compile Include="View\Clientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Clientes.Designer.cs">
+    <Compile Include="View\Clientes.Designer.cs">
       <DependentUpon>Clientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Empregado.cs" />
-    <Compile Include="EmpregadoEditor.cs">
+    <Compile Include="DAO\Model\Empregado.cs" />
+    <Compile Include="View\EmpregadoEditor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EmpregadoEditor.Designer.cs">
+    <Compile Include="View\EmpregadoEditor.Designer.cs">
       <DependentUpon>EmpregadoEditor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Empregados.cs">
+    <Compile Include="View\Empregados.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Empregados.Designer.cs">
+    <Compile Include="View\Empregados.Designer.cs">
       <DependentUpon>Empregados.cs</DependentUpon>
     </Compile>
-    <Compile Include="Central.cs">
+    <Compile Include="View\Central.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Central.Designer.cs">
+    <Compile Include="View\Central.Designer.cs">
       <DependentUpon>Central.cs</DependentUpon>
     </Compile>
-    <Compile Include="ProcessamentoPedido.cs">
+    <Compile Include="View\ProcessamentoPedido.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ProcessamentoPedido.Designer.cs">
+    <Compile Include="View\ProcessamentoPedido.Designer.cs">
       <DependentUpon>ProcessamentoPedido.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WebServiceCEP.cs" />
-    <EmbeddedResource Include="CadastroCliente.resx">
+    <Compile Include="DAL\WebServiceCEP.cs" />
+    <EmbeddedResource Include="View\CadastroCliente.resx">
       <DependentUpon>CadastroCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CarroEditor.resx">
+    <EmbeddedResource Include="View\CarroEditor.resx">
       <SubType>Designer</SubType>
       <DependentUpon>CarroEditor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Carros.resx">
+    <EmbeddedResource Include="View\Carros.resx">
       <DependentUpon>Carros.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Central.resx">
+    <EmbeddedResource Include="View\Central.resx">
       <SubType>Designer</SubType>
       <DependentUpon>Central.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ClienteEditor.resx">
+    <EmbeddedResource Include="View\ClienteEditor.resx">
       <SubType>Designer</SubType>
       <DependentUpon>ClienteEditor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Clientes.resx">
+    <EmbeddedResource Include="View\Clientes.resx">
       <SubType>Designer</SubType>
       <DependentUpon>Clientes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EmpregadoEditor.resx">
+    <EmbeddedResource Include="View\EmpregadoEditor.resx">
       <SubType>Designer</SubType>
       <DependentUpon>EmpregadoEditor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Empregados.resx">
+    <EmbeddedResource Include="View\Empregados.resx">
       <SubType>Designer</SubType>
       <DependentUpon>Empregados.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ProcessamentoPedido.resx">
+    <EmbeddedResource Include="View\ProcessamentoPedido.resx">
       <SubType>Designer</SubType>
       <DependentUpon>ProcessamentoPedido.cs</DependentUpon>
     </EmbeddedResource>
@@ -214,7 +214,7 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="TaxasLocacao.resx">
+    <EmbeddedResource Include="View\TaxasLocacao.resx">
       <SubType>Designer</SubType>
       <DependentUpon>TaxasLocacao.cs</DependentUpon>
     </EmbeddedResource>
@@ -234,23 +234,26 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="PedidoLocacao.cs" />
-    <Compile Include="TaxasLocacao.cs">
+    <Compile Include="DAO\Model\PedidoLocacao.cs" />
+    <Compile Include="View\TaxasLocacao.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TaxasLocacao.Designer.cs">
+    <Compile Include="View\TaxasLocacao.Designer.cs">
       <DependentUpon>TaxasLocacao.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />
-    <Content Include="ReleaseNotes.txt" />
+    <Content Include="DAO\ReleaseNotes.txt" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ConexaoMysql\ConexaoMysql.csproj">
       <Project>{0667fec5-3c7b-4197-926d-ce12e1b295fc}</Project>
       <Name>ConexaoMysql</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BLL\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

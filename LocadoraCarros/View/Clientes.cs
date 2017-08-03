@@ -86,39 +86,8 @@ namespace AppLocadora
         private void btnNewCustomer_Click(object sender, EventArgs e)
         {
             CadastroCliente editor = new CadastroCliente();
-
-            if (editor.ShowDialog() == DialogResult.OK)
-            {
-                //if (editor.txtDrvLicNbr.Text == "")
-                //{
-                //    MessageBox.Show("Você deve fornecer o numero de registro da " +
-                //                    "carteira de habilitação do cliente.");
-                //    return;
-                //}
-
-                //if (editor.txtFullName.Text == "")
-                //{
-                //    MessageBox.Show("Informe o nome completo.");
-                //    return;
-                //}
-                
-            //    Cliente cli = new Cliente();
-
-            //    //cli.CNH = editor.txtDrvLicNbr.Text;
-            //    cli.CNH = "";
-            //    cli.Nome = editor.txtFullName.Text;
-            //    cli.Endereco = editor.txtAddress.Text;
-            //    cli.Cidade = editor.txtCity.Text;
-            //    cli.Estado = editor.cbxStates.Text;
-            //    cli.CodigoPostal = editor.txtZIPCode.Text;
-            //    OperacaoBanco operacao = new OperacaoBanco();
-            //    bool inserir = operacao.Insert("insert into tb_cliente (Nome,Endereco,Cidade,Estado,CEP,CNH) Values ('" + cli.Nome + "','" + cli.Endereco + "','" + cli.Cidade + "','" + cli.Estado + "','" + cli.CodigoPostal + "','" + cli.CNH + "')");
-            //    if (inserir)
-            //    {
-            //        MessageBox.Show("Sucesso!");
-            //    }
-            //    Close();
-            }
+            Close();
+            editor.ShowDialog();
         }
 
         private void btnClose_Click(object sender, EventArgs e)

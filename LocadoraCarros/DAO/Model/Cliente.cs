@@ -12,6 +12,8 @@ namespace AppLocadora
         public string Estado;
         public string CodigoPostal;
         public string CNH;
+        public string Pais;
+        public string Telefone;
 
         public Cliente()
         {
@@ -22,6 +24,8 @@ namespace AppLocadora
             Estado = "";
             CodigoPostal = "";
             CNH = "";
+            Pais = "";
+            Telefone = "";
         }
 
         // define o cliente

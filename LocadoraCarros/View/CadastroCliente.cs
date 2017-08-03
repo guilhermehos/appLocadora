@@ -51,6 +51,27 @@ namespace AppLocadora
                 MessageBox.Show("Informar o país.");
                 return;
             }
+
+            Cliente cli = new Cliente();
+
+            //cli.CNH = editor.txtDrvLicNbr.Text;
+            cli.CNH = txtCNH.Text;
+            cli.Nome = txtNome.Text;
+            cli.Endereco = txtEndereco.Text;
+            cli.Cidade = txtCidade.Text;
+            cli.Estado = txtEstado.Text;
+            cli.CodigoPostal = txtCEP.Text;
+            cli.Pais = cboPais.Text;
+            cli.Telefone = txtTelefone.Text;
+            OperacaoBanco operacao = new OperacaoBanco();
+            bool inserir = operacao.Insert("insert into tb_cliente (Nome,Endereco,Cidade,Estado,CEP,CNH,Pais,Telefone) Values ('" + cli.Nome + "','" + cli.Endereco + "','" + cli.Cidade + "','" + cli.Estado + "','" + cli.CodigoPostal + "','" + cli.CNH + "','" +cli.Pais + "','" +cli.Telefone+ "')");
+            if (inserir)
+            {
+                MessageBox.Show("Sucesso!");
+            }
+            Clientes clientes = new Clientes();
+            clientes.ShowDialog();
+            Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
