@@ -1,3 +1,4 @@
+using AppLocadora.View;
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
@@ -14,7 +15,10 @@ namespace AppLocadora
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Central());
+            LoginAppContext loginAppContext = new LoginAppContext(new Central(), new Login());
+            Application.Run(loginAppContext);
+            //Application.Run(new Central(context));
+
         }
     }
 }

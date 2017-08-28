@@ -10,3 +10,13 @@ C:\LocadoraCarros\appLocadora\ConexaoMysql\bin\Debug\pt-BR\Microsoft.Build.Utili
 C:\LocadoraCarros\appLocadora\ConexaoMysql\obj\Debug\ConexaoMysql.exe
 C:\LocadoraCarros\appLocadora\ConexaoMysql\obj\Debug\ConexaoMysql.pdb
 C:\LocadoraCarros\appLocadora\ConexaoMysql\obj\Debug\ConexaoMysql.csprojResolveAssemblyReference.cache
+C:\Users\guilh\Documents\appLocadora\ConexaoMysql\bin\Debug\ConexaoMysql.exe.config
+C:\Users\guilh\Documents\appLocadora\ConexaoMysql\bin\Debug\ConexaoMysql.exe
+C:\Users\guilh\Documents\appLocadora\ConexaoMysql\bin\Debug\ConexaoMysql.pdb
+C:\Users\guilh\Documents\appLocadora\ConexaoMysql\bin\Debug\MySql.Data.dll
+C:\Users\guilh\Documents\appLocadora\ConexaoMysql\bin\Debug\Microsoft.Build.Utilities.v3.5.dll
+C:\Users\guilh\Documents\appLocadora\ConexaoMysql\bin\Debug\Microsoft.Build.Utilities.v3.5.xml
+C:\Users\guilh\Documents\appLocadora\ConexaoMysql\bin\Debug\pt-BR\Microsoft.Build.Utilities.v3.5.resources.dll
+C:\Users\guilh\Documents\appLocadora\ConexaoMysql\obj\Debug\ConexaoMysql.csprojResolveAssemblyReference.cache
+C:\Users\guilh\Documents\appLocadora\ConexaoMysql\obj\Debug\ConexaoMysql.exe
+C:\Users\guilh\Documents\appLocadora\ConexaoMysql\obj\Debug\ConexaoMysql.pdb
